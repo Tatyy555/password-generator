@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="flex flex-col h-screen w-screen justify-center items-center">
+    <div class="h-[500px] w-[500px] flex flex-col bg-[#1F2937] p-12">
+      <p class="mt-5 text-4xl font-bold text-white">Generate a</p>
+      <p class="text-4xl font-bold text-[#55F991]">
+        random password of <br />
+        15 characters
+      </p>
+      <p class="text-xl text-gray-400">Never use an insecure password again.</p>
+      <div class="flex flex-col my-10 justify-start">
+        <button
+          type="button"
+          class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 px-5 py-2.5 text-center rounded-md mr-48"
+          onclick="{generatePassword()}"
+        >
+          Generate passwords
+        </button>
+      </div>
+      <div class="mb-10 border-t-2 border-[#2F3E53]"></div>
+      <div class="flex justify-between items-center">
+        <div
+          id="leftBox"
+          class="bg-[#2F3E53] rounded-md h-10 w-48 justify-center text-center items-center"
+        >
+          <p
+            id="leftBoxText"
+            class="text-[#55F991] text-lg font-bold mt-[5px]"
+          ></p>
+        </div>
+        <div
+          id="rightBox"
+          class="bg-[#2F3E53] rounded-md h-10 w-48 justify-center text-center items-center"
+        >
+          <p
+            id="rightBoxText"
+            class="text-[#55F991] text-lg font-bold mt-[5px]"
+          ></p>
+        </div>
+      </div>
+    </div>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
