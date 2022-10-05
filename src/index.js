@@ -111,4 +111,12 @@ function generatePassword() {
   rightBoxText.textContent = passwordRight;
 }
 
+let passSaveBtn = document.querySelector("#pass-save-btn");
+let passLengthInput = document.querySelector("#pass-length-input");
+let passLengthOutput = document.querySelector("#pass-length-output");
+
+passSaveBtn.addEventListener("click", function(){
+  passLengthOutput.textContent = "Saved: " + passLengthInput.value
+  passwordLength = passLengthInput.value;
+})
 

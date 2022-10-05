@@ -5,12 +5,28 @@
   <body class="flex flex-col h-screen w-screen justify-center items-center">
     <div class="h-[500px] w-[500px] flex flex-col bg-[#1F2937] p-12">
       <p class="mt-5 text-4xl font-bold text-white">Generate a</p>
-      <p class="text-4xl font-bold text-[#55F991]">
-        random password of <br />
-        15 characters
-      </p>
+      <p class="text-4xl font-bold text-[#55F991]">random password</p>
       <p class="text-xl text-gray-400">Never use an insecure password again.</p>
-      <div class="flex flex-col my-10 justify-start">
+      <div class="flex flex-col my-10">
+        <p class="mb-2 text-white">Set Password Length (Max:15, Min:3)</p>
+        <div class="flex">
+          <input
+            type="number"
+            id="pass-length-input"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 p-2.5 mb-2 w-32"
+            placeholder="15"
+            max="15"
+            min="3"
+          />
+          <button
+            type="button"
+            id="pass-save-btn"
+            class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-2 mb-2"
+          >
+            SAVE
+          </button>
+          <p id="pass-length-output" class="text-white mt-3 ml-4">Saved: 15 (default)</p>
+        </div>
         <button
           type="button"
           class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 px-5 py-2.5 text-center rounded-md mr-48"
